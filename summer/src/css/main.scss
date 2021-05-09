@@ -1,0 +1,73 @@
+@import 'log-reg.scss';
+
+.newInstanceWin {
+  text-align: center;
+  width: 50%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 auto;
+  color: black;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  border: 2px solid #f5f7f8;
+}
+
+td {
+  text-align: center;
+}
+
+.btn-add {
+  /*float: right;*/
+  float: right;
+}
+
+.td-td {
+  overflow: auto;
+  width: 4%;
+}
+
+.table {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  border: 2px solid #f5f7f8;
+}
+
+.btn {
+  @extend .log-reg-btn;
+  padding: 10px;
+  margin: 10px 10px;
+  width: 130px;
+  height: 35px;
+  border: 0;
+
+  &-stop {
+    color: darkred;
+    background: #f4f4f4;
+
+    &:hover {
+      box-shadow: 0 1px 5px #b50000, 0 1px 10px #ff0000, 0 1px 15px #f33b41, 1px 5px 10px #f36e6b;
+      background-color: #f36e6b;
+      transition-delay: 0.3s;
+      color: black;
+    }
+  }
+
+  &-start {
+    color: darkgreen;
+    background: #f4f4f4;
+
+    &:hover {
+      box-shadow: 0 1px 5px #0a860d, 0 1px 10px #0ab70d, 0 1px 15px #0af50d, 1px 5px 10px #88ff8d;
+      background-color: #6bd56e;
+      transition-delay: 0.3s;
+      color: black;
+    }
+  }
+}

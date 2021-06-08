@@ -1,5 +1,6 @@
-FROM node:current-alpine
-COPY  . /usr/src/app
+FROM node:11
+
+COPY . /usr/src/app
 WORKDIR /usr/src/app
-RUN npm install
-CMD ["npm", "start"]
+
+CMD ["npm","rebuild node-sass"]
